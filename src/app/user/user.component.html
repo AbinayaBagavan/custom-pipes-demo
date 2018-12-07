@@ -1,0 +1,12 @@
+Filter List:<input type="text" (input)="filterList($event.target.value)">
+<h2>User Component List</h2>
+<table>
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+</tr>
+<tr *ngFor="let user of userDetails" >
+  <td>{{user.id}}</td>
+  <td>{{user.name}}</td>
+</tr>
+</table>
